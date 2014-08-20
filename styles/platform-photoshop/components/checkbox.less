@@ -1,0 +1,27 @@
+.platform-photoshop {
+  input[type=checkbox] {
+    &:extend(.gradient.active);
+    -webkit-appearance: none;
+    .size(16px);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 7px 0 0;
+    border-radius: 2px;
+    border: 1px solid @photoshop-dark-border-color;
+
+    &:after {
+      .pseudo;
+      .absolute(2px, 3px);
+      .size(10px, 8px);
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -webkit-transition: -webkit-transform 150ms, opacity 100ms;
+    }
+
+    &:checked:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+    }
+  }
+}

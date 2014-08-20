@@ -1,0 +1,67 @@
+.platform-web {
+  &:extend(.platform-photoshop);
+  &:extend(.platform-photoshop .dark all);
+
+  body {
+    background-color: #535353;
+  }
+
+  * {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    &,
+    &:before,
+    &:after {
+      -webkit-filter: none !important;
+    }
+  }
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  .tabs {
+    &:extend(.platform-photoshop .tabs all);
+  }
+
+  hr {
+    &:extend(.platform-photoshop hr);
+  }
+
+  button, .button {
+    &:extend(.platform-photoshop button all);
+  }
+
+  .select-container {
+    &:extend(.platform-photoshop .select-container all);
+  }
+
+  select {
+    &:extend(.platform-photoshop select all);
+  }
+
+  input {
+    &:extend(.platform-photoshop input[type=text]);
+  }
+
+  textarea {
+    &:extend(.platform-photoshop textarea);
+  }
+
+  input[type=search] {
+    &:extend(.platform-photoshop input[type=search]);
+  }
+
+  input[type=range] {
+    &:extend(.platform-photoshop input[type=range] all);
+  }
+
+  input[type=checkbox] {
+    &:extend(.platform-photoshop input[type=checkbox] all);
+  }
+
+  input[type=radio] {
+    &:extend(.platform-photoshop input[type=radio] all);
+  }
+}

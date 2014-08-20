@@ -1,0 +1,61 @@
+.colored-button (@color) {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+  background-image: none;
+  background-color: @color;
+  border: 1px solid contrast(@color, darken(@color, 23%), darken(@color, 15%), 30%);
+
+  &:hover {
+    background-color: lighten(@color, 3%);
+  }
+
+  &:active,
+  &.active {
+    box-shadow: none;
+    background-color: contrast(@color, darken(@color, 10%), desaturate(darken(@color, 4%), 10%), 30%);
+  }
+}
+
+.platform-photoshop {
+  button, .button {
+    &:extend(.gradient all);
+    display: inline-block;
+    line-height: @photoshop-button-height;
+    padding: @photoshop-button-padding;
+    border-radius: 3px;
+    border: 1px solid @photoshop-dark-border-color;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),
+                0 1px 0 rgba(255,255,255,.2);
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, .25);
+    vertical-align: middle;
+
+    &:active,
+    &.active {
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.08),
+                  0 1px 0 rgba(255,255,255,.2);
+    }
+
+    &.flat {
+      background-color: rgba(255,255,255,.08);
+      background-image: none;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+
+      &:hover {
+        background-color: rgba(255,255,255,.12);
+      }
+
+      &:active,
+      &.active {
+        box-shadow: none;
+        background-color: rgba(0,0,0,.2);
+      }
+    }
+
+    &.red {
+      .colored-button(#e74b3b);
+    }
+
+    &.green {
+      .colored-button(#19bb9b);
+    }
+  }
+}

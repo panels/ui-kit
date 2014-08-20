@@ -1,0 +1,52 @@
+.platform-photoshop {
+  input[type=text],
+  input[type=email],
+  input[type=search],
+  input[type=password],
+  input[type=range],
+  input[type=number],
+  textarea {
+    &:extend(.gradient.active);
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 5px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.20);
+    border: 1px solid @photoshop-dark-border-color;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=search],
+  input[type=password],
+  input[type=range],
+  input[type=number] {
+    height: @photoshop-input-height;
+  }
+
+  textarea {
+    padding: 10px;
+    resize: none;
+  }
+
+  input[type=search] {
+    padding-right: 5px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 16px;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 2px;
+    padding: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.45);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.03) 0%, rgba(0,0,0,.3) 100%);
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      .size(11px);
+    }
+  }
+}

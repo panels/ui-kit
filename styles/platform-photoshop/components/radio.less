@@ -1,0 +1,31 @@
+.platform-photoshop {
+  input[type=radio] {
+    &:extend(.gradient.active);
+    -webkit-appearance: none;
+    .size(16px);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 7px;
+    border-radius: 8px;
+    border: 1px solid @photoshop-dark-border-color;
+
+    &:after {
+      .pseudo;
+      .absolute;
+      .size(6px);
+      border-radius: 3px;
+      margin: 4px;
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -webkit-transition: -webkit-transform 150ms, opacity 150ms;
+    }
+
+    &:checked:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+    }
+  }
+
+}
