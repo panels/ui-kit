@@ -1,0 +1,21 @@
+{
+  "name": "panel-ui-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "prepublish": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panels/ui-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/panels/ui-kit/issues"
+  },
+  "author": "Patrik Holcak <patrikholcak@abdoc.net> (https://github.com/patrikholcak)",
+  "license": "MIT",
+  "devDependencies": {
+    "less-minimal": "^1.7.4"
+  }
+}
