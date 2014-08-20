@@ -1,10 +1,10 @@
 {
   "name": "panel-ui-kit",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "UI Kit",
+  "main": "ui-kit.css",
   "scripts": {
-    "prepublish": ""
+    "prepublish": "./node_modules/.bin/lessc styles/main.less -x > ui-kit.css"
   },
   "repository": {
     "type": "git",
