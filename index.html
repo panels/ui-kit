@@ -5,172 +5,170 @@
   <title>plugin-ui-kit</title>
   <link rel="stylesheet" href="ui-kit.css">
 </head>
-<body class="dark">
-    <h1>Photoshop UI Kit</h1>
+<body>
+  <h1>Photoshop UI Kit</h1>
 
-    <section class="container">
-      <h2>Tabs</h2>
+  <section>
+    <h2>Tabs</h2>
 
-      <ul class="tabs">
-        <li>Normal</li>
-        <li class="active">Active</li>
-        <li class="disabled">Disabled</li>
-      </ul>
+    <ul class="tabs">
+      <li>Normal</li>
+      <li class="active">Active</li>
+      <li class="disabled">Disabled</li>
+    </ul>
 
-      <hr>
+    <hr>
 
-      <h3>Disabled</h3>
-      <p>Any element can be disabled by adding the .disabled class.</p>
+    <h3>Disabled</h3>
+    <p>Any element can be disabled by adding the .disabled class.</p>
 
-      <ul class="disabled tabs">
-        <li>Tab 1</li>
-        <li>Tab 2</li>
-        <li>Tab 3</li>
-      </ul>
+    <ul class="disabled tabs">
+      <li>Tab 1</li>
+      <li>Tab 2</li>
+      <li>Tab 3</li>
+    </ul>
 
-      <hr>
+    <hr>
+  </section>
 
-    </section>
+  <section>
+    <h2>Buttons</h2>
 
-    <section class="container">
-      <h2>Buttons</h2>
+    <h3>Default button</h3>
+    <p>Use the element you need, like &lt;button&gt;, &lt;span&gt;, &lt;a&gt;…<p>
 
-      <h3>Default button</h3>
-      <p>Use the element you need, like &lt;button&gt;, &lt;span&gt;, &lt;a&gt;…<p>
+    <button>Button</button>
+    <button class="flat">Button</button>
+    <span class="disabled button">Span</span>
+    <a href="#" class="active button">Link</a>
 
-      <button>Button</button>
-      <button class="flat">Button</button>
-      <span class="disabled button">Span</span>
-      <a href="#" class="active button">Link</a>
+    <hr>
 
-      <hr>
+    <h3>Green buttons</h3>
 
-      <h3>Green buttons</h3>
+    <button class="green">Button</button>
+    <span class="disabled green button">Span</span>
+    <a href="#" class="active green button">Link</a>
 
-      <button class="green">Button</button>
-      <span class="disabled green button">Span</span>
-      <a href="#" class="active green button">Link</a>
+    <hr>
 
-      <hr>
+    <h3>Red buttons</h3>
 
-      <h3>Red buttons</h3>
+    <button class="red">Button</button>
+    <span class="disabled red button">Span</span>
+    <a href="#" class="active red button">Link</a>
 
-      <button class="red">Button</button>
-      <span class="disabled red button">Span</span>
-      <a href="#" class="active red button">Link</a>
+    <hr>
 
-      <hr>
+    <h3>Navigation buttons</h3>
 
-      <h3>Navigation buttons</h3>
+    <ul class="tabs nav">
+      <li>◀</li>
+      <li>►</li>
+    </ul>
 
-      <ul class="tabs nav">
-        <li>◀</li>
-        <li>►</li>
-      </ul>
+    <hr>
+  </section>
 
-      <hr>
-    </section>
+  <section>
+    <h2>Select</h2>
 
-    <section class="container">
-      <h2>Select</h2>
+    <div class="select-container">
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+    </div>
 
-      <div class="select-container">
-        <select>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>
+    <div class="select-container">
+      <select class="flat">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+    </div>
 
-      <div class="select-container">
-        <select class="flat">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>
+    <hr>
+  </section>
 
-      <hr>
-    </section>
+  <section>
+    <h2>Form Elements</h2>
 
-    <section class="container">
-      <h2>Form Elements</h2>
+    <h3>Default input</h3>
+    <p>input[type=text,email,password,…]</p>
 
-      <h3>Default input</h3>
-      <p>input[type=text,email,password,…]</p>
+    <input type="text" placeholder="Your placeholder goes here">
 
-      <input type="text" placeholder="Your placeholder goes here">
+    <hr>
 
-      <hr>
+    <h3>Textarea</h3>
+    <p>textarea</p>
 
-      <h3>Textarea</h3>
-      <p>textarea</p>
+    <textarea rows="10" placeholder="Your placeholder goes here"></textarea>
 
-      <textarea height="200" placeholder="Your placeholder goes here"></textarea>
+    <hr>
 
-      <hr>
+    <h3>Search input</h3>
 
-      <h3>Search input</h3>
+    <p>input[type=search]</p>
 
-      <p>input[type=search]</p>
+    <input type="search" placeholder="Search for something…">
 
-      <input type="search" placeholder="Search for something…">
+    <hr>
 
-      <hr>
+    <h3>Number input</h3>
+    <p>input[type=number]</p>
 
-      <h3>Number input</h3>
-      <p>input[type=number]</p>
+    <input type="number" max="100" min="0" value="0" step="10">
 
-      <input type="number" max="100" min="0" value="0" step="10" unit="%" stepper>
+    <hr>
 
-      <hr>
+    <h3>Range input</h3>
+    <p>input[type=range]</p>
 
-      <h3>Range input</h3>
-      <p>input[type=range]</p>
+    <input type="range">
 
-      <input type="range">
+    <hr>
 
-      <hr>
+    <h3>Checkboxes</h3>
+    <label>
+      <input type="checkbox" checked>Active
+    </label>
 
-      <h3>Checkboxes</h3>
-      <label>
-        <input type="checkbox" checked>Active
-      </label>
+    <label>
+      <input type="checkbox" checked>Inactive
+    </label>
 
-      <label>
-        <input type="checkbox" checked>Inactive
-      </label>
+    <label class="disabled">
+      <input type="checkbox" disabled>Disabled
+    </label>
 
-      <label class="disabled">
-        <input type="checkbox" disabled>Disabled
-      </label>
+    <label class="disabled">
+      <input type="checkbox" checked disabled>Disabled
+    </label>
 
-      <label class="disabled">
-        <input type="checkbox" checked disabled>Disabled
-      </label>
+    <hr>
 
-      <hr>
+    <h3>Radio</h3>
 
-      <h3>Radio</h3>
+    <label>
+      <input type="radio" name="radio" checked>Active
+    </label>
 
-      <label>
-        <input type="radio" name="radio" checked>Active
-      </label>
+    <label>
+      <input type="radio" name="radio">Inactive
+    </label>
 
-      <label>
-        <input type="radio" name="radio">Inactive
-      </label>
+    <label class="disabled">
+      <input type="radio" name="radio" disabled>Disabled
+    </label>
 
-      <label class="disabled">
-        <input type="radio" name="radio" disabled>Disabled
-      </label>
+    <label class="disabled">
+      <input type="radio" checked disabled>Disabled
+    </label>
 
-      <label class="disabled">
-        <input type="radio" checked disabled>Disabled
-      </label>
-
-      <hr>
-
-    </section>
+    <hr>
+  </section>
 </body>
 </html>

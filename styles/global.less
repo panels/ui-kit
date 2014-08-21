@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
@@ -16,18 +14,34 @@ textarea,
 select {
   outline: none;
   color: inherit;
-  background-clip: padding-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
 }
 
 .disabled {
   .pointer-events(none);
   cursor: default;
+}
+
+.platform-photoshop,
+.platform-web {
+  &, * {
+    margin: 0;
+    padding: 0;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    outline: none;
+    background-clip: padding-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
+  }
 }
